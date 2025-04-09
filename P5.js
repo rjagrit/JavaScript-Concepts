@@ -121,3 +121,4 @@ let productOfAry=userAry.reduce((res,cur)=>{
     return res*cur;
 });
 console.log("Product of all numbers in the array is: ",productOfAry);
+
