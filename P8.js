@@ -56,3 +56,50 @@ modeBtn.addEventListener("click",()=>{
         currMode = "light";
     }
 });
+
+//Q. Create a toggle button that changes the screen to dark mode when clicked & light mode when clicked again using ClassList
+let modebtn1 = document.querySelector("#modes");
+let bodyElement = document.querySelector("body");
+let currMode1 = "light";
+
+modebtn1.addEventListener("click",()=>{
+    if(currMode1 === "light"){
+        currMode1 = "dark";
+        bodyElement.classList.add("dark");
+        modebtn1.innerText = "Light Mode";
+        bodyElement.classList.remove("light");
+    }else{
+        currMode1 = "light";
+        bodyElement.classList.add("light");
+        modebtn1.innerText = "Dark Mode";
+        bodyElement.classList.remove("dark");
+    }
+});
+
+
+//Change the Page using mouseover event
+// My Traffuc Light
+let colorDiv = document.querySelector("#c1");
+colorDiv.addEventListener("mouseover",()=>{
+    colorDiv.style.backgroundColor = "red";
+});
+
+let colorDiv1= document.querySelector("#c2");
+colorDiv1.addEventListener("mouseover",()=>{
+    colorDiv1.style.backgroundColor = "blue";
+});
+let colorDiv2= document.querySelector("#c3");
+colorDiv2.addEventListener("mouseover",()=>{
+    colorDiv2.style.backgroundColor = "green";
+});
+let colorDiv3= document.querySelector("#c4");
+colorDiv3.addEventListener("mouseover",()=>{
+    colorDiv3.style.backgroundColor = "purple";
+});
+
+addEventListener("mouseout",()=>{
+    colorDiv.style.backgroundColor = "white";
+    colorDiv1.style.backgroundColor = "white";
+    colorDiv2.style.backgroundColor = "white";
+    colorDiv3.style.backgroundColor = "white";
+})
