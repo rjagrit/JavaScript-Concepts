@@ -1,0 +1,62 @@
+/* For adding cutsom styling to the page always set margin and padding to 0 */
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+    background-color: grey;
+    text-align: center;
+ }
+ 
+ .container{
+    height: 70vh; /* 70% of the viewport height, it means 70% part always reside with container*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ 
+ .game{
+     height: 60vmin; /* 6 0% of the viewport minimum, */
+     width: 60vmin; /* 60% of the viewport minimum, */
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 1.5vmin;
+    }
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffff8f;
+}
+
+#rst,#newbtn{
+    margin-top: 10px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    border:none;
+}
+#msg{
+    color: white;
+    font-size:8vmin;
+}
+
+.msg-container{
+   height: 15vmin;
+}
+
+.hide{
+    display: none;
+}

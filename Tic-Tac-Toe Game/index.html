@@ -1,0 +1,54 @@
+<!-- 
+Tic Toe Game usually called as "Zero Kata" is a simple game played on a 3x3 grid.
+The game is played by two players who take turns marking a square in the grid with their respective symbols (X or O). 
+The player who first places three of their symbols in a row, column, or diagonal wins the game. 
+If all squares are filled and no player has three in a row, the game ends in a draw.
+
+--0--|---1---|--2--
+--3--|---4---|--5--
+--6--|---7---|--8--
+
+Winning Patterns:
+a) Horizontal Pattern : 0 / X in all places 0,1,2 / 3,4,5 / 6,7,8
+b) Vertical Pattern : 0 / X in all places 0,3,6 / 1,4,7 / 2,5,8
+c) Diagonal Pattern : 0 / X in all places 0,4,8 / 2,4,6
+
+There are total 8 Winning Patterns
+
+Steps to create a Tic-Tac-Toe Game:
+1. Create a 3x3 grid using HTML and CSS.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+    </div>
+    <main>
+        <h1>Tic-Tac-Toe Game</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="rst">Reset Game</button>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
