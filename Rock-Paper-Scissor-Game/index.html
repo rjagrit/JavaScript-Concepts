@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="head-1">Rock Paper Scissors Game</h1>
+<div class="container">
+    <!-- Computer Choice -->
+    <div class="computer-choice">
+        <h2 class="head-2">Computer Choice</h2>
+        <div class="imgcontainer">
+            <img src="computer.jpg" alt="Rock" class="computerimg">
+        </div>
+        <h2 id="compChoice" class="head-3"></h2>
+    </div>
+
+    <!-- Choices -->
+    <div class="choices">
+        <h2 class="head-2">Choices</h2>
+        <div class="logo-container">
+            <div class="logo" id="rock">
+                <img src="rock.png">
+            </div>
+            <div class="logo" id="paper">
+                <img src="paper.png" >
+            </div>
+            <div class="logo" id="scissors">
+                <img src="scissors.png" >
+            </div>
+        </div>
+    </div>
+
+    <!--User Choice-->
+    <div class="user-choice">
+        <h2 class="head-2">User Choice</h2>
+        <div class="imgcontainer">
+            <img src="user.png" alt="user" class="user">
+        </div>
+        <h2 id="userChoice" class="head-3"></h2>
+    </div>
+</div>
+
+<!-- Container-2 -->
+<div class="container-2">
+    <!-- Computer Score -->
+    <div class="computer-score">
+        <h1 id="cpScore">Computer Score : </h1>
+    </div>
+
+    <!-- Result -->
+    <div class="msg">
+        <h1 id="resultMsg"></h1>
+    </div>
+
+    <!--User Score-->
+    <div class="user-score">
+        <h1 id="usScore">User Score : </h1>
+    </div>
+</div>
+<div class="container-3">
+    <!-- <button>PLAY</button> -->
+    <button onclick="location.reload()">RESET</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
